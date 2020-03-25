@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
 const Context = React.createContext()
 
@@ -23,6 +24,8 @@ export class Provider extends Component {
     ],
     heading: 'Top 10 Tracks'
   }
+
+  componentDidMount() {}
 
   render() {
     return (
