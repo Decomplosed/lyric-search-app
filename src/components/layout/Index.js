@@ -1,7 +1,12 @@
 import React from 'react'
+import Tracks from '../Tracks/Tracks'
 
 const Index = () => {
-  return <div></div>
+  return (
+    <React.Fragment>
+      <Tracks />
+    </React.Fragment>
+  )
 }
 
 export default Index
