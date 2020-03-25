@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Provider } from './context'
+
 import Navbar from './components/layout/Navbar'
 import Index from './components/layout/Index'
 
