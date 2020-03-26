@@ -12,7 +12,9 @@ class Lyrics extends Component {
       .get(
         `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
       )
-      .then(res => console.log(res))
+      .then(res => {
+        this.setState({ lyrics: res.data.message.body.lyrics })
+      })
       .catch(err => console.log(err))
   }
 
