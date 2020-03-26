@@ -4,6 +4,7 @@ import { Provider } from './context'
 
 import Navbar from './components/layout/Navbar'
 import Index from './components/layout/Index'
+import Lyrics from './components/Tracks/Lyrics'
 
 import './App.css'
 
