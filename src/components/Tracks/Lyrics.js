@@ -5,6 +5,9 @@ class Lyrics extends Component {
     track: {},
     lyrics: {}
   }
+
+  componentDidMount() {}
+
   render() {
     return (
       <div>
