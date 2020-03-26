@@ -39,7 +39,13 @@ class Lyrics extends Component {
     ) {
       return <Spinner />
     } else {
-      return <h1>Data returned</h1>
+      return (
+        <React.Fragment>
+          <Link to='/' className='btn btn-dark btn-sm mb-4'>
+            Go Back
+          </Link>
+        </React.Fragment>
+      )
     }
   }
 }
