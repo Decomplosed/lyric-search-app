@@ -38,6 +38,7 @@ class Lyrics extends Component {
     ) {
       return <Spinner />
     } else {
+      return <h1>Data returned</h1>
     }
   }
 }
