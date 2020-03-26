@@ -19,6 +19,7 @@ const Track = props => {
             </strong>
             : {track.album_name}
           </p>
+          <Link to={`lurics/track/${track.track_id}`} />
         </div>
       </div>
     </div>
