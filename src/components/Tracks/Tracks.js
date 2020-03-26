@@ -15,7 +15,11 @@ class Tracks extends Component {
             return (
               <React.Fragment>
                 <h3 className='text-center mb-4'>{heading}</h3>
-                <div className='row'></div>
+                <div className='row'>
+                  {trackList.map(item => (
+                    <Track key={item.track.track_id} track={item.track} />
+                  ))}
+                </div>
               </React.Fragment>
             )
           }
