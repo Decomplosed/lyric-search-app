@@ -26,6 +26,7 @@ class Lyrics extends Component {
   }
 
   render() {
+    const { track, lyrics } = this.state
     return (
       <div>
         <h1>Lyrics</h1>
