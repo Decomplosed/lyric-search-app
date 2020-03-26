@@ -34,6 +34,8 @@ class Lyrics extends Component {
       (track === Object.keys(track).length) === 0 ||
       (lyrics === Object.keys(lyrics).length) === 0
     ) {
+      return <Spinner />
+    } else {
     }
   }
 }
