@@ -31,7 +31,7 @@ class Search extends Component {
                     placeholder='Song title...'
                     name='trackTitle'
                     value={this.state.trackTitle}
-                    onChange={this.onChange}
+                    onChange={this.onChange.bind(this)}
                   />
                 </div>
               </form>
