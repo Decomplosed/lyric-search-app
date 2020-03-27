@@ -34,8 +34,8 @@ class Lyrics extends Component {
     if (
       track === undefined ||
       lyrics === undefined ||
-      (track === Object.keys(track).length) === 0 ||
-      (lyrics === Object.keys(lyrics).length) === 0
+      Object.keys(track).length === 0 ||
+      Object.keys(lyrics).length === 0
     ) {
       return <Spinner />
     } else {
