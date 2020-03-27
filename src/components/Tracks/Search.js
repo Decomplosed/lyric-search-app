@@ -7,14 +7,19 @@ class Search extends Component {
     trackTitle: ''
   }
 
-  findTrack = e => {
+  findTrack = (dispatch, e) => {
     e.preventDefault()
 
     axios
       .get(
         `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.trackTitle}&page_size=10&page=1&s_track_rating=desc&apikey=${process.env.REACT_APP_MM_KEY}`
       )
-      .then(res => console.log(res.data))
+      .then(res => {
+        dispatch({
+          type: 'SEATCH_TRACKS',
+          payload: res.data.message.boy.track_list
+        })
+      })
       .catch(err => console.log(err))
   }
 
