@@ -23,7 +23,7 @@ class Search extends Component {
               <p className='lead text-center'>
                 Get the Lyrics for your favourite song!
               </p>
-              <form>
+              <form onSubmit={this.findTrack}>
                 <div className='form-group'>
                   <input
                     type='text'
