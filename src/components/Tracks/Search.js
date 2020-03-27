@@ -16,7 +16,7 @@ class Search extends Component {
       )
       .then(res => {
         dispatch({
-          type: 'SEATCH_TRACKS',
+          type: 'SEARCH_TRACKS',
           payload: res.data.message.boy.track_list
         })
       })
@@ -31,6 +31,7 @@ class Search extends Component {
     return (
       <Consumer>
         {value => {
+          const { dispatch } = value
           return (
             <div className='card card-body mb-4 p-4'>
               <h1 className='duisplay-4 text-center'>
