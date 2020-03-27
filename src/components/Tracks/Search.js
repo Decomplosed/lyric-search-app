@@ -26,6 +26,7 @@ class Search extends Component {
                     className='form-control form-control-lg'
                     placeholder='Song title...'
                     name='trackTitle'
+                    value={this.state.trackTitle}
                   />
                 </div>
               </form>
