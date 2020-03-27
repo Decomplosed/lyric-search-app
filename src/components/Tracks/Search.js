@@ -7,6 +7,10 @@ class Search extends Component {
     trackTitle: ''
   }
 
+  onChange(e) {
+    this.setState({ trackTitle: e.target.value })
+  }
+
   render() {
     return (
       <Consumer>
