@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import moduleName from 'react-moment'
 
 import Spinner from '../layout/Spinner'
 
