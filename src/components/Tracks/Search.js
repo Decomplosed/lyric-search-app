@@ -35,7 +35,7 @@ class Search extends Component {
                   />
                 </div>
                 <button
-                  className='btn-btn-primary btn-lg btn-block mb-5'
+                  className='btn btn-primary btn-lg btn-block mb-5'
                   type='submit'
                 >
                   Get Lyrics
