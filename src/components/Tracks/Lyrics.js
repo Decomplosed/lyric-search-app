@@ -58,6 +58,9 @@ class Lyrics extends Component {
             <li className="list-group-item">
               <strong>Album ID</strong>: {track.album_id}
             </li>
+            <li className="list-group-item">
+              <strong>Song Genre</strong>: {track.primary_genres.music_genre_list[0].music_genre.music_genre_name}
+            </li>
           </ul>
         </React.Fragment>
       )
