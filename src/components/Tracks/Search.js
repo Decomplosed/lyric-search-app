@@ -7,7 +7,7 @@ class Search extends Component {
     trackTitle: ''
   }
 
-  onChange(e) {
+  onChange = e => {
     this.setState({ trackTitle: e.target.value })
   }
 
