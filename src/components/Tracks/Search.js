@@ -19,6 +19,16 @@ class Search extends Component {
               <p className='lead text-center'>
                 Get the Lyrics for your favourite song!
               </p>
+              <form>
+                <div className='form-group'>
+                  <input
+                    type='text'
+                    className='form-control form-control-lg'
+                    placeholder='Song title...'
+                    name='trackTitle'
+                  />
+                </div>
+              </form>
             </div>
           )
         }}
